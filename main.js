@@ -89,6 +89,16 @@ var MUSIC = {
     links.appendChild(a);
   });
 
+  // Back-to-top button: shows once you scroll past the intro, on every tab.
+  var toTop = document.getElementById('to-top');
+  function onScroll() { toTop.hidden = window.scrollY < 600; }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  });
+
   // Theme toggle, remembered per visitor.
   var root = document.documentElement;
   try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch (e) {}
