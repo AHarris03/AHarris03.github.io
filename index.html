@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alexis Harris</title>
+<meta name="description" content="Alexis Harris: product, user research and education, with a computer science background. Also a musician.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="logo" href="#projects">alexis<span>.</span></a>
+  <nav class="top-links" aria-label="Elsewhere">
+    <a href="https://www.linkedin.com/in/alexiseharris">linkedin</a>
+    <a class="hide-sm" href="https://github.com/AHarris03">github</a>
+    <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch color theme">theme</button>
+  </nav>
+</header>
+
+<section class="wrap intro" aria-labelledby="hello">
+  <h1 id="hello">Hi, I'm Alexis. I turn messy <em>human problems</em> into products and programs people actually use.</h1>
+  <p>I have degrees in Computer Science and Cognitive Science from the University of Michigan, with a minor in music. I've co-founded products, built a CS curriculum from scratch, and redesigned how a mental health nonprofit brings people in. I'm looking for product management, user research, and education roles.</p>
+  <p class="ai-note"><b>On AI:</b> I can write the code myself, and I also build with AI on purpose. It lets me prototype in hours instead of weeks, so more of my time goes to the people and the problem. This site was built that way.</p>
+  <div class="cta">
+    <a href="#resume">view resume ↘</a>
+    <a href="#music">listen ↘</a>
+    <span>alexisharris9102@gmail.com</span>
+  </div>
+</section>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="wrap" role="tablist">
+    <button class="tab" role="tab" id="tab-projects" aria-controls="projects" aria-selected="true" type="button">projects</button>
+    <button class="tab" role="tab" id="tab-music" aria-controls="music" aria-selected="false" type="button">music &amp; creative</button>
+    <button class="tab" role="tab" id="tab-resume" aria-controls="resume" aria-selected="false" type="button">resume</button>
+  </div>
+</nav>
+
+<main>
+  <!-- PROJECTS -->
+  <section class="wrap panel" id="projects" role="tabpanel" aria-labelledby="tab-projects">
+    <h2>Projects</h2>
+    <p class="lede">Products I've helped start. Each one began with people who needed something and a problem nobody had scoped yet.</p>
+    <div class="projects">
+      <article class="project">
+        <div class="stat"><b>1</b><span>person team: idea, design and build</span></div>
+        <div class="body">
+          <span class="kicker">Creator · Sept 2026</span>
+          <h3>Ready Set Goal</h3>
+          <p>A goal-setting and accountability app where people set goals, track their progress, and cheer each other on.</p>
+          <p>I came up with the idea, designed it, and built it myself, with a little help from AI along the way.</p>
+          <ul class="tags"><li>Solo build</li><li>Accountability</li><li>Community</li></ul>
+          <div class="links"><a href="https://ready-set-goal.vercel.app/">visit ↗</a></div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="stat"><b>5</b><span>person team</span></div>
+        <div class="body">
+          <span class="kicker">Co-founder · Capstone · 2026</span>
+          <h3>Remember</h3>
+          <p>A memory-support app that helps people living with memory loss keep their relationships, their memories, and the people they trust close at hand.</p>
+          <p>I led coordination for our interdisciplinary team, scoped requirements, and prioritized features like memory libraries, trusted contacts, and photo-based memory cues, weighing what we could build against what caregivers and aging users actually need.</p>
+          <ul class="tags"><li>Product scoping</li><li>Accessibility</li><li>Team lead</li></ul>
+        </div>
+      </article>
+      <article class="project">
+        <div class="stat"><b>3</b><span>person team</span></div>
+        <div class="body">
+          <span class="kicker">Co-founder + developer · 2025</span>
+          <h3>Ethical Careers</h3>
+          <p>A platform where job seekers rate employers on People, Planet, and Transparency, turning a fuzzy ethical framework into features you can score.</p>
+          <p>I built user profiles and pseudonymous identities so people could post safely, helped design onboarding and review flows, and ran a 17-person before-and-after study on how the platform changed users' ethical awareness.</p>
+          <ul class="tags"><li>User research</li><li>Onboarding</li><li>Privacy</li><li>Front end</li></ul>
+          <div class="links"><a href="https://ethical-careers.vercel.app/">visit ↗</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MUSIC & CREATIVE -->
+  <section class="wrap panel" id="music" role="tabpanel" aria-labelledby="tab-music" hidden>
+    <h2>Music &amp; creative</h2>
+    <p class="kicker">as A. Elaine</p>
+    <p class="lede">A. Elaine is a singer-songwriter who uses music as a way to process growth, love, and becoming. Drawing from personal experience, her sound blends honesty, vulnerability, and quiet strength, inviting listeners into moments that feel both intimate and familiar.</p>
+
+    <p class="label">Listen</p>
+    <div class="players">
+      <div class="embed embed-audio" data-embed="spotify"></div>
+      <div class="embed embed-audio" data-embed="apple"></div>
+    </div>
+    <div class="links stream-links" id="stream-links"></div>
+
+    <p class="label">Watch</p>
+    <div class="videos" id="videos"></div>
+
+    <p class="label">Follow</p>
+    <div class="links socials">
+      <a href="https://www.instagram.com/_its.alex1s/">instagram · @_its.alex1s ↗</a>
+      <a href="https://www.tiktok.com/@1ts_a.elaine">tiktok · @1ts_a.elaine ↗</a>
+    </div>
+
+  </section>
+
+  <!-- RESUME -->
+  <section class="wrap panel" id="resume" role="tabpanel" aria-labelledby="tab-resume" hidden>
+    <h2>Resume</h2>
+    <div class="resume-head">
+      <p class="lede">Product, research, and program work, with a technical foundation.</p>
+      <a class="btn" href="resume.pdf">resume.pdf ↓</a>
+    </div>
+
+    <p class="label">Experience</p>
+    <ol class="timeline">
+      <li>
+        <span class="when">Oct 2022 – Present</span>
+        <div class="what">
+          <h3>Student Ambassador</h3>
+          <span class="org">Intend-2-Attend (I2A)</span>
+          <ul>
+            <li>Mentor 2–3 high school students each semester through college planning, essays, and financial aid.</li>
+            <li>Co-develop and lead workshops for statewide programming that reaches about 1,000 students a year.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Jul 2024 – Oct 2025</span>
+        <div class="what">
+          <h3>Program Coordinator</h3>
+          <span class="org">NAMI Washtenaw County</span>
+          <ul>
+            <li>Ran 50+ intake screenings per enrollment cycle for cohorts of 11–15 participants, and used attendance and retention data to find where onboarding broke down.</li>
+            <li>Redesigned intake systems, surveys, and registration workflows to be more accessible and easier to scale.</li>
+            <li>Grew partnerships with Neutral Zone, Greenhills School, the University of Michigan, and Boys &amp; Girls Clubs.</li>
+            <li>Wrote the proposal for a new 18–25-year-old board seat.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Oct 2022 – Aug 2025</span>
+        <div class="what">
+          <h3>Instructor</h3>
+          <span class="org">Girls in Engineering Academy, Engineering Society of Detroit</span>
+          <ul>
+            <li>Designed and taught an original CS and college-readiness curriculum for cohorts of 20–25 middle schoolers.</li>
+            <li>Built pre/post assessments and adjusted instruction from the results; several students showed 100–600%+ gains over the year.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Jun 2023 – Dec 2024</span>
+        <div class="what">
+          <h3>Founder &amp; President</h3>
+          <span class="org">Refill Your Cup, student mental health organization</span>
+          <ul>
+            <li>Recruited and led a 6-person executive board and ran about five wellness events drawing ~20 students each.</li>
+            <li>Funded programming through student government grants.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">May 2021 – Aug 2021</span>
+        <div class="what">
+          <h3>Cashier</h3>
+          <span class="org">Meijer</span>
+          <ul>
+            <li>Handled cash, credit, and debit transactions accurately in a high-volume store.</li>
+            <li>Answered customer questions and resolved checkout issues during busy shifts.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <span class="when">Jun 2019 – Aug 2019</span>
+        <div class="what">
+          <h3>Social Work Intern</h3>
+          <span class="org">James A. Haley VA Hospital</span>
+          <ul>
+            <li>Supported social work staff in helping veterans and their families, handling sensitive information with care.</li>
+            <li>Connected people with services and resources that fit their needs.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+
+    <p class="label">Education</p>
+    <ol class="timeline">
+      <li>
+        <span class="when">2021 – 2026</span>
+        <div class="what">
+          <h3>B.S. Computer Science, B.S. Cognitive Science</h3>
+          <span class="org">University of Michigan, Ann Arbor · Minor in Music</span>
+        </div>
+      </li>
+    </ol>
+
+    <p class="label">Skills</p>
+    <div class="skills">
+      <div><b>Product &amp; research</b><ul class="tags"><li>Product strategy</li><li>User research</li><li>Evaluation studies</li><li>Survey &amp; workflow design</li><li>Data analysis</li></ul></div>
+      <div><b>Education &amp; programs</b><ul class="tags"><li>Curriculum design</li><li>Assessment</li><li>Workshops</li><li>Mentoring</li><li>Grant writing</li></ul></div>
+      <div><b>Technical</b><ul class="tags"><li>Python</li><li>C++</li><li>Git</li><li>Linux</li><li>Arduino</li><li>AI-assisted development</li><li>LLM prompting</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Alexis Harris · Detroit · built from scratch with AI</span>
+    <span class="social"><a href="https://www.linkedin.com/in/alexiseharris">linkedin</a><a href="https://github.com/AHarris03">github</a><a href="https://www.instagram.com/_its.alex1s/">instagram</a><a href="https://www.tiktok.com/@1ts_a.elaine">tiktok</a></span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
